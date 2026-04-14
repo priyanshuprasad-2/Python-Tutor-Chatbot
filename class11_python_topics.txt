@@ -1,0 +1,142 @@
+Topic: string
+Definition:
+A string in Python is a sequence of characters enclosed in either single quotes (' '), double quotes (" "), or triple quotes (''' ''' or """ """).
+
+Examples:
+str1 = 'Hello'
+str2 = "Python"
+str3 = '''This is
+a multi-line
+string'''
+
+Types of String Representation:
+1. Single-quoted string: 'Hello'
+2. Double-quoted string: "World"
+3. Triple-quoted string: '''Multi-line'''
+
+Important Functions with Examples:
+1. len(string) → returns length of string
+   Example: len("Python") = 6
+2. string.upper() → converts to uppercase
+   Example: "python".upper() = "PYTHON"
+3. string.lower() → converts to lowercase
+   Example: "HELLO".lower() = "hello"
+4. string.find(sub) → returns first index of substring
+   Example: "python".find("th") = 2
+5. string.replace(old,new) → replaces substring
+   Example: "hello world".replace("world","Python") = "hello Python"
+
+--------------------------------------------------
+
+Topic: list
+Definition:
+A list in Python is an ordered collection of elements, which can be of different types. Lists are mutable (can be changed).
+
+Examples:
+my_list = [1, 2, 3, "Python", 4.5]
+
+Important Functions with Examples:
+1. append(x) → adds element at end
+   Example: my_list.append(6)
+2. insert(i,x) → inserts element at position
+   Example: my_list.insert(1,"Hello")
+3. remove(x) → removes first occurrence of value
+   Example: my_list.remove(3)
+4. pop(i) → removes element at index i
+   Example: my_list.pop(2)
+5. sort() → sorts list
+   Example: my_list.sort()
+
+--------------------------------------------------
+
+Topic: tuple
+Definition:
+A tuple in Python is an ordered collection of elements, similar to lists, but immutable (cannot be modified).
+
+Examples:
+t1 = (1,2,3)
+t2 = ("a","b","c")
+
+Important Functions with Examples:
+1. len(tuple) → returns length
+   Example: len((1,2,3)) = 3
+2. tuple.count(x) → counts number of occurrences
+   Example: (1,2,2,3).count(2) = 2
+3. tuple.index(x) → returns first index of value
+   Example: (10,20,30).index(20) = 1
+
+--------------------------------------------------
+
+Topic: dictionary
+Definition:
+A dictionary in Python is an unordered collection of key-value pairs. Keys are unique and immutable, values can be of any type.
+
+Examples:
+my_dict = {"name":"Priyanshu", "age":17, "class":12}
+
+Important Functions with Examples:
+1. keys() → returns all keys
+   Example: my_dict.keys()
+2. values() → returns all values
+   Example: my_dict.values()
+3. items() → returns key-value pairs
+   Example: my_dict.items()
+4. get(key) → returns value for key
+   Example: my_dict.get("name")
+5. update(new_dict) → updates dictionary
+   Example: my_dict.update({"age":18})
+
+--------------------------------------------------
+
+Topic: if else program
+Definition:
+if-else statements are conditional statements used to execute different blocks of code depending on whether a condition is true or false.
+
+Examples:
+x = 10
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is less than or equal to 5")
+
+--------------------------------------------------
+
+Topic: loops
+Definition:
+Loops are used to repeatedly execute a block of code as long as a condition is true or for each element in a sequence.
+
+Types:
+1. for loop → iterate over a sequence
+   Example: for i in range(5): print(i)
+2. while loop → repeat until condition is false
+   Example:
+   i=1
+   while i<=5:
+       print(i)
+       i+=1
+
+Loop Control Statements:
+1. break → exit loop
+2. continue → skip current iteration
+3. pass → do nothing
+
+--------------------------------------------------
+
+Topic: function
+Definition:
+A function is a block of reusable code that performs a specific task. Functions are defined using the def keyword.
+
+Examples:
+def greet(name):
+    return "Hello " + name
+
+print(greet("Priyanshu"))
+
+Types of Functions:
+1. Built-in functions → already available in Python (len, print, type, etc.)
+2. User-defined functions → defined by the programmer
+3. Lambda functions → anonymous functions defined with lambda keyword
+
+Example of Lambda:
+add = lambda x,y : x+y
+print(add(5,3))  # Output: 8
